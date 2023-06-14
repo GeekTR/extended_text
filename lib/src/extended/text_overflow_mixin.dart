@@ -264,7 +264,7 @@ mixin TextOverflowMixin on _RenderParagraph {
 
       if (_hasVisualOverflow) {
         // not find
-        assert(range.end != maxOffset, 'can\' find no overflow');
+        // assert(range.end != maxOffset, 'can\' find no overflow');
         range.end = math.min(
             range.end + math.max((maxEnd - range.end) ~/ 2, 1), maxOffset);
         hideWidgets.clear();
